@@ -42,7 +42,7 @@
         function startTime() {
           var randomInt = getRandomValue(2, 10);
           console.log(randomInt);
-          for (let i = 1; i <= 3; i++) {
+          for (let i = 4; i>0; i--) {
             setTimeout(function (i) {
               document.getElementById("countdown").innerHTML = i
             }, (((randomInt - 1) - i) * 1000), i);
